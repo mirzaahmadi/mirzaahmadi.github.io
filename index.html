@@ -1,0 +1,48 @@
+<!-- Quality from 95 to 67 without noticing difference-->
+<!-- File size from 129.1 kB to 47.7 kB-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mirza Ahmadi's assessment for CS11010</title>
+	<meta http-equiv="Content-Type"
+	content="text/html; charset=utf-8" >
+	<link rel="stylesheet" type="text/css" href="prac3stylesheet.css" />
+</head>
+
+<body>
+	<header> Mirza Ali Murtuza Ahmadi</header>
+	<nav> 
+		<ul>
+			<li> <a href="file:///C:/Users/Ali%20Ahmadi/OneDrive%20-%20University%20of%20Guelph/Desktop/Personal%20Wesbite/All%20material%20for%20personal%20wesbite/Full%20website/CV.html">CV</a> </li>
+			<li> <a href="https://www.linkedin.com/in/mirzaalimurtuzaahmadi/">LinkedIn</a> </li>
+			<li> <a href="https://www.youtube.com/watch?v=LpdjGh14MgE&t=2s">Programming Project</a> </li>
+			<li> <a href="file:///C:/Users/Ali%20Ahmadi/OneDrive%20-%20University%20of%20Guelph/Desktop/Personal%20Wesbite/All%20material%20for%20personal%20wesbite/Full%20website/Questionnaire.html">Questionnaire</a> </li>
+			<li> <a href="file:///C:/Users/Ali%20Ahmadi/OneDrive%20-%20University%20of%20Guelph/Desktop/Personal%20Wesbite/All%20material%20for%20personal%20wesbite/Full%20website/About.html">About</a> </li>
+		</ul>
+	</nav>
+
+	<img id="me" src = "ProperPicOfMe1.jpg" alt = "landscape.JPG">
+	<p class = "welcome"><strong>Welcome, I'm Mirza!</strong></p>
+	<p class = "message">Thanks for stopping by! Feel free to check out any of the above tabs to learn more about me.</p>
+	<p class = "contact"> contact me:
+	<p class = "email"> <a href=mailto:mia54@aber.ac.uk>mia54@aber.ac.uk</a>
+	<p class = "phone">123-123-123</p>
+
+	<hr/> 
+	
+	<div id = "timeofupdate">
+		<button onclick="lastupdate()">Last Modified</button>
+	</div>
+
+	<script>
+		function lastupdate()
+		{
+			var latestDate = new Date(document.lastModified)
+			document.getElementById("timeofupdate").innerHTML = latestDate.toLocaleString('en-GB', { timezone: 'UTC'});
+		}
+		
+	</script>
+ 
+</body>
+

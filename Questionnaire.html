@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML5 Forms</title>
+<meta charset="UTF-8" />
+<script>
+
+function myfunc()
+{
+    var text = "" // initialise a variable to hold final description
+    var name = document.getElementById("namebox");
+    var submit = document.getElementById("submit")
+    var output = document.getElementById("answer");
+    var output2 = document.getElementById("answer2");
+    var mark = document.getElementById("mydropdown").options[mydropdown.selectedIndex].text;
+
+    var one = document.getElementById("mydropdown").options[0].text;
+    var two = document.getElementById("mydropdown").options[1].text;
+    var three = document.getElementById("mydropdown").options[2].text;
+    var four = document.getElementById("mydropdown").options[3].text;
+    var five = document.getElementById("mydropdown").options[4].text;
+
+        if (mark == one)
+        {
+            var statement = "C'mon, you can do better than that!";
+            var percent = "20%"
+        }
+        if (mark == two) 
+        {
+            var statement = "Not your best effort!";
+            var percent = "40%"
+        }
+        if (mark == three)
+        {
+            var statement = "Meh, its ok I guess.";
+            var percent = "60%"
+        }
+        if (mark == four)
+        {
+            var statement = "That's pretty good!";
+            var percent = "80%"
+        }
+        else if (mark == five)
+        {
+            var statement = "Wow, that is excellent!"
+            var percent = "100%"
+        }
+
+    Today = new Date();
+		Hours = Today.getHours();
+		Mins = Today.getMinutes();
+
+		if (0 < Hours && Hours < 12)
+		{
+			greeting = "Good morning";
+		}
+		if (Hours > 12 && Hours < 18)
+		{
+			greeting = "Good afternoon";
+		}
+		else
+		{
+			greeting = "Good evening";
+		} 
+
+    output.innerHTML = greeting + ", " + name.value + "!"
+    output2.innerHTML = "So, you think you'll get a" + " " + percent + "?" + " " + statement; 
+}
+
+</script>
+</head>
+<body>
+<h1>Questionnaire</h1>
+
+
+<form id = "message">
+<p>
+What is your name?
+<br>
+<input type="text" id="namebox" size="20" placeholder = "enter name" />
+<!-- place holder in the above line of code is different than value! -->
+</p>
+
+<p>
+What grade do you think you will get on this worksheet? (Out of 5)
+<br>
+<select id="mydropdown">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+
+</p>
+<br>
+<hr />
+</form>
+
+<input type="button" id="submit" onclick="myfunc()" value="Submit" />
+
+<p id="answer"></p> 
+<p id="answer2"></p>
+<!-- empty paragraph which will output final message -->
+
+</body>
+</html>
