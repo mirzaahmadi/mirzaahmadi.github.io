@@ -10,7 +10,28 @@
 <body>
 	<header class = "title"> <strong>Programming Projects</strong></header>
     <hr class="line">
-    <header>1. Road Sign Categorizer </header>
+    <header>1. Augmenting EEG Classification with GAN-Generated Data (BrainHack 2024) </header>
+    <p class = "welcome">
+	This project develops a machine learning model to classify electroencephalogram (EEG) data recorded with a Muse headset. My team and I collected 200,000 datapoints from two 1-minute sessions per participant — one where we focused on human faces and 
+	the other on breathing. We trained a Random Forest classifier on the data, achieving 94.8% accuracy on unseen data. Additionally, we synthesized 800,000 new datapoints using a Generative Adversarial Network (GAN). Results were visualized using confusion 
+	matrices, ROC AUC curves, loss plots (generator vs discriminator), and learning curves.
+        <div class="center-container">
+            <a href="https://github.com/mirzaahmadi/NeuroGryphs_BrainHack2024">
+                <img src="github_logo.png" alt="Github Logo" class="github-logo">
+            </a>
+        </div>
+    </p>
+    <header>2. Evaluating Algorithms for Gene Sequence Classification </header>
+    <p class = "welcome">
+	This project compares Random Forest and Linear Regression algorithms for gene sequence classification using Cytochrome c oxidase subunit I (COI) sequences. After filtering the sequences (removing outliers based on length and ambiguous nucleotides), 
+	I trained both classifiers and benchmarked their performance, visualizing sequence length distribution, k-mer frequency proportions, and feature importance.
+        <div class="center-container">
+            <a href="https://github.com/mirzaahmadi/Assignment2_Comparing-Classifiers">
+                <img src="github_logo.png" alt="Github Logo" class="github-logo">
+            </a>
+        </div>
+    </p>
+    <header>3. Road Sign Categorizer </header>
     <p class = "welcome">
 	This project develops a feed-forward neural network to categorize road sign images into 43 distinct categories. It leverages the 'tensorflow', 'scikit-learn', 
 	and 'os' libraries for data preprocessing and model building. By utilizing a convolutional neural network (CNN) with pooling layers, the model achieves a 
@@ -21,7 +42,7 @@
             </a>
         </div>
     </p>
-    <header>2. Venom Type Classifier </header>
+    <header>4. Venom Type Classifier </header>
     <p class = "welcome">
 	This project uses the machine learning algorithm Support Vector Machine from the 'scikit-learn' library, to accurately 
 	predict snake venom types based on their protein compositions. It also includes features to visualize the dataset using a PCA plot, leveraging the 
@@ -37,7 +58,7 @@
             </a>
         </div>
     </p>
-    <header>3. SciRef</header>
+    <header>5. SciRef</header>
     <p class = "welcome">
 	"SciRef" is a robust tool designed to streamline the creation of personalized scientific references using provided URLs. 
 	Building upon the functionality of a Python script that I developed previously, this application combines React as the frontend framework 
@@ -54,7 +75,7 @@
             </a>
         </div>
     </p>
-    <header>4. Colour Chaos!</header>
+    <header>6. Colour Chaos!</header>
     <p class = "welcome">
         "Colour Chaos!" is a colour-matching game created using the 
         Pygame library in Python. The game displays words in different colours, and the 
@@ -74,7 +95,7 @@
             </a>
         </div>
     </p>
-    <header>5. Scientific Reference Customizer</header>
+    <header>7. Scientific Reference Customizer</header>
     <p class = "welcome">
         This Python script serves as a command-line tool for generating formatted 
         references to articles from PubMed. It takes a user-provided 
